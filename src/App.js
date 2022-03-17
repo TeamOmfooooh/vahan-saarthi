@@ -1,19 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+// import logo from "./logo.svg";
+// import "./App.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import PotholeRegistration from "./components/PotholeRegistration";
+
+//Bootstrap
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/potholeregistration"
+            element={<PotholeRegistration />}
+          />
+        </Routes>
+      </BrowserRouter>
     );
   }
 }
