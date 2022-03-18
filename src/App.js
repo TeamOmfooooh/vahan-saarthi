@@ -1,28 +1,29 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // import logo from "./logo.svg";
 // import "./App.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import PotholeRegistration from "./components/PotholeRegistration";
+import { Routes, Route } from 'react-router-dom';
+import { Home, PotholeRegistration, NavBar } from './components';
 
 //Bootstrap
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/potholeregistration"
-            element={<PotholeRegistration />}
-          />
-        </Routes>
-      </BrowserRouter>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<NavBar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route
+						path="/potholeregistration"
+						element={<PotholeRegistration />}
+					/>
+				</Routes>
+			</div>
+		);
+	}
 }
 
 export default App;
