@@ -1,0 +1,24 @@
+.card_report {
+	background-image: url('https://www.clipartmax.com/png/full/77-775139_pothole-sign.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom 1px right 8px;
+}
+
+.card_admin {
+	background-image: url('https://www.clipartmax.com/png/full/16-166560_log-clipart-user-profile-user-login-icon-png.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom 1px right 8px;
+}
+
+@media only screen and (min-width: 600px) {
+	.potholeform {
+		width: 30rem;
+	}
+}
+
+.login_form {
+	background-color: aliceblue;
+	height: 500px;
+}
