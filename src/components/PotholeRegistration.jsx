@@ -1,4 +1,5 @@
 import React from 'react';
+import Maps from './Maps';
 
 export default function PotholeRegistration() {
 	// Detect Location Button Functionality
@@ -35,29 +36,15 @@ export default function PotholeRegistration() {
 						>
 							<i className="bi bi-geo-alt-fill"></i> Detect Location
 						</button>
+						{longitude && (
+							<Maps
+								longitude={longitude}
+								latitude={latitude}
+								simplified
+								marker
+							/>
+						)}
 					</div>
-				</div>
-				<div>
-					<label for="longitude" className="form-label">
-						Longitude
-					</label>
-					<input
-						type="text"
-						className="form-control"
-						id="longitude"
-						value={longitude}
-					/>
-				</div>
-				<div>
-					<label for="latitude" className="form-label">
-						Latitude
-					</label>
-					<input
-						type="text"
-						className="form-control"
-						id="latitude"
-						value={latitude}
-					/>
 				</div>
 
 				<div>

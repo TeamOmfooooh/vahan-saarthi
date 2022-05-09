@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 
 import { Routes, Route } from 'react-router-dom';
-import { Home, PotholeRegistration, NavBar, Login } from './components';
+import {
+	Home,
+	PotholeRegistration,
+	NavBar,
+	Login,
+	AdminDashboard,
+} from './components';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -18,6 +24,7 @@ class App extends Component {
 						element={<PotholeRegistration />}
 					/>
 					<Route path="/login" element={<Login />} />
+					<Route path="/dashboard" element={<AdminDashboard />} />
 				</Routes>
 			</div>
 		);
