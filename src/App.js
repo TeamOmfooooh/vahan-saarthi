@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-// import logo from "./logo.svg";
-// import "./App.css";
 
 import { Routes, Route } from 'react-router-dom';
-import { Home, PotholeRegistration, NavBar } from './components';
+import {
+	Home,
+	PotholeRegistration,
+	NavBar,
+	Login,
+	AdminDashboard,
+} from './components';
 
-//Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -20,6 +23,8 @@ class App extends Component {
 						path="/potholeregistration"
 						element={<PotholeRegistration />}
 					/>
+					<Route path="/login" element={<Login />} />
+					<Route path="/dashboard" element={<AdminDashboard />} />
 				</Routes>
 			</div>
 		);

@@ -1,3 +1,5 @@
-export { default as Home } from './Home';
-export { default as NavBar } from './NavBar';
-export { default as PotholeRegistration } from './PotholeRegistration';
+export { default as Home } from './Home.jsx';
+export { default as NavBar } from './NavBar.jsx';
+export { default as PotholeRegistration } from './PotholeRegistration.jsx';
+export { default as Login } from './Login';
+export { default as AdminDashboard } from './AdminDashboard.jsx';
